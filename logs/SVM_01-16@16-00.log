@@ -1,0 +1,13 @@
+2019-01-16 16:12:37,407:    |train size:50000, cost 11.46
+2019-01-16 16:18:59,852:    |train acc:1.0
+2019-01-16 16:20:15,780:    |test svm acc: 0.1025 @[1025/10000]
+SVMscale-raw
+pca ratio: 0.8978956146850399
+finished preprocess
+begin
+train size:50000, cost 11.46
+train acc:1.0
+test svm acc: 0.1025 @[1025/10000]
+
+1.0
+0.1025

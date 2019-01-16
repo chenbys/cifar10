@@ -1,0 +1,3 @@
+2019-01-16 22:55:32,604:    |Namespace(learning_rate=1.0, max_depth=4, n_estimators=100, name='adaboost', pca_dim=320)
+2019-01-16 22:55:38,945:    |finished preprocess: PCA: 320@0.98, cost time: 0.1m
+2019-01-16 22:55:45,969:    |stump acc: 0.23458
