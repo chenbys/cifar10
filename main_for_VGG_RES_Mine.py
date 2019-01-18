@@ -23,16 +23,17 @@ import datetime
 
 def main():
     parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Training')
-    parser.add_argument('--model_name', default='res18', type=str,
+    parser.add_argument('--model_name', default='mine_dropout', type=str,
                         help='the string startswith means which model to use,  it is also log_name and save_name')
-    parser.add_argument('--lr', default=0.1, type=float)
-    parser.add_argument('--wd', default=5e-4, type=float)
+    parser.add_argument('--lr', default=1e-1, type=float)
+    parser.add_argument('--wd', default=1e-4, type=float)
+    parser.add_argument('--batch_size', default=128, type=int)
+    parser.add_argument('--mm', default=0.9, type=float, help='adam or sgd')
     parser.add_argument('--optim', default='sgd', type=str, help='adam or sgd')
     parser.add_argument('--resume', default=None, type=str, help='resume path to checkpoint, None for restart')
     # parser.add_argument('--resume', default='res18_train0.93_test0.89_eph80', type=str,
     #                     help='resume path to checkpoint, None for restart')
-    parser.add_argument('--num_epoch', default=50, type=int)
-    parser.add_argument('--batch_size', default=128, type=int)
+    parser.add_argument('--num_epoch', default=200, type=int)
     args = parser.parse_args()
 
     #############################################
@@ -52,7 +53,7 @@ def main():
         logger.info(str(msg))
 
     ###############################################
-
+    log(args)
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     log(device)
 
@@ -85,8 +86,14 @@ def main():
         net = resnet.ResNet18()
     elif args.model_name.startswith('vgg16'):
         net = vgg.VGG('VGG16')
+    elif args.model_name.startswith('mine_dropout'):
+        net = mine.Mine_dropout()
+    elif args.model_name.startswith('mine_1122_dropout'):
+        net = mine.Mine_1122_dropout()
+    elif args.model_name.startswith('mine_1111_dropout'):
+        net = mine.Mine_1111_dropout()
     else:
-        net = mine.CNN()
+        net = mine.Mine()
 
     net = net.to(device)
     if device == 'cuda':
@@ -106,7 +113,7 @@ def main():
 
     criterion = nn.CrossEntropyLoss()
     if args.optim == 'sgd':
-        optimizer = optim.SGD(net.parameters(), lr=args.lr, momentum=0.9, weight_decay=args.wd)
+        optimizer = optim.SGD(net.parameters(), lr=args.lr, momentum=args.mm, weight_decay=args.wd)
     else:
         optimizer = optim.Adam(net.parameters(), lr=args.lr, weight_decay=args.wd)
 
@@ -150,15 +157,17 @@ def main():
         }
         if not os.path.isdir('checkpoint'):
             os.mkdir('checkpoint')
-        torch.save(state, f'./checkpoint/{args.model_name}_train{train_acc:.2f}_test{test_acc:.2f}_eph{cur_epoch}.ckpt')
+        save_path = f'./checkpoint/{args.model_name}_train{train_acc:.2f}_test{test_acc:.2f}_eph{cur_epoch}.ckpt'
+        torch.save(state, save_path)
+        log(save_path)
 
     for epoch in range(start_epoch, start_epoch + args.num_epoch):
         train_acc = train()
         test_acc = test()
         log(f'Epoch: {epoch}, train acc: {train_acc:.2f}, test acc: {test_acc:.2f}')
-        if ((epoch + 1) % 20 == 0) and epoch:
+        if (epoch + 1) % 40 == 0:
             save(net, train_acc, test_acc, epoch)
-        log('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
+        # log('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
 
     return
 
