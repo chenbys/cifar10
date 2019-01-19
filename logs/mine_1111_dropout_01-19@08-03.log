@@ -174,3 +174,8 @@
 2019-01-19 11:11:32,826:    |Epoch: 161, train acc: 0.73, test acc: 0.70
 2019-01-19 11:12:41,361:    |Epoch: 162, train acc: 0.73, test acc: 0.68
 2019-01-19 11:13:50,676:    |Epoch: 163, train acc: 0.73, test acc: 0.65
+2019-01-19 11:15:01,743:    |Epoch: 164, train acc: 0.73, test acc: 0.61
+2019-01-19 11:16:10,632:    |Epoch: 165, train acc: 0.73, test acc: 0.67
+2019-01-19 11:17:15,667:    |Epoch: 166, train acc: 0.73, test acc: 0.70
+2019-01-19 11:18:20,404:    |Epoch: 167, train acc: 0.73, test acc: 0.65
+2019-01-19 11:19:19,555:    |Epoch: 168, train acc: 0.73, test acc: 0.68

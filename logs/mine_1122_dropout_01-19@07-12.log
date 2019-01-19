@@ -124,3 +124,4 @@
 2019-01-19 11:09:52,645:    |Epoch: 115, train acc: 0.24, test acc: 0.10
 2019-01-19 11:11:55,622:    |Epoch: 116, train acc: 0.25, test acc: 0.21
 2019-01-19 11:13:57,482:    |Epoch: 117, train acc: 0.24, test acc: 0.15
+2019-01-19 11:16:02,370:    |Epoch: 118, train acc: 0.25, test acc: 0.18

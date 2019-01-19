@@ -1,0 +1,17 @@
+2019-01-19 15:13:55,444:    |Namespace(batch_size=128, lr=0.1, mm=0.9, model_name='mine_1111_dropout', num_epoch=200, optim='sgd', resume=None, wd=1e-05)
+2019-01-19 15:13:55,467:    |cuda
+2019-01-19 15:13:57,087:    |==> Building model..
+2019-01-19 15:14:02,576:    |restart
+2019-01-19 15:15:21,386:    |Epoch: 0, train acc: 0.35, test acc: 0.47
+2019-01-19 15:16:32,466:    |Epoch: 1, train acc: 0.51, test acc: 0.53
+2019-01-19 15:17:45,655:    |Epoch: 2, train acc: 0.59, test acc: 0.60
+2019-01-19 15:18:56,105:    |Epoch: 3, train acc: 0.64, test acc: 0.62
+2019-01-19 15:20:08,051:    |Epoch: 4, train acc: 0.67, test acc: 0.68
+2019-01-19 15:21:17,636:    |Epoch: 5, train acc: 0.69, test acc: 0.66
+2019-01-19 15:22:29,704:    |Epoch: 6, train acc: 0.71, test acc: 0.72
+2019-01-19 15:23:39,127:    |Epoch: 7, train acc: 0.73, test acc: 0.74
+2019-01-19 15:24:49,806:    |Epoch: 8, train acc: 0.74, test acc: 0.76
+2019-01-19 15:26:01,727:    |Epoch: 9, train acc: 0.76, test acc: 0.75
+2019-01-19 15:27:13,056:    |Epoch: 10, train acc: 0.77, test acc: 0.77
+2019-01-19 15:28:24,986:    |Epoch: 11, train acc: 0.78, test acc: 0.76
+2019-01-19 15:29:34,667:    |Epoch: 12, train acc: 0.79, test acc: 0.79
