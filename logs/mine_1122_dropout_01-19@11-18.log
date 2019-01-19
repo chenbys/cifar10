@@ -125,3 +125,7 @@
 2019-01-19 15:24:57,596:    |Epoch: 116, train acc: 0.92, test acc: 0.87
 2019-01-19 15:27:06,966:    |Epoch: 117, train acc: 0.92, test acc: 0.87
 2019-01-19 15:29:13,214:    |Epoch: 118, train acc: 0.92, test acc: 0.86
+2019-01-19 15:31:20,717:    |Epoch: 119, train acc: 0.93, test acc: 0.88
+2019-01-19 15:31:20,717:    |Saving...
+2019-01-19 15:31:20,769:    |./checkpoint/mine_1122_dropout_train0.93_test0.88_eph119.ckpt
+2019-01-19 15:33:26,649:    |Epoch: 120, train acc: 0.92, test acc: 0.87
