@@ -1,0 +1,9 @@
+2019-01-19 18:39:10,949:    |Namespace(batch_size=128, lr=0.1, mm=0.9, model_name='resnet18', num_epoch=200, optim='sgd', resume=None, wd=0.0001)
+2019-01-19 18:39:11,053:    |cuda
+2019-01-19 18:39:12,629:    |==> Building model..
+2019-01-19 18:39:13,981:    |restart
+2019-01-19 18:39:48,737:    |Epoch: 0, train acc: 0.43, test acc: 0.45
+2019-01-19 18:40:20,434:    |Epoch: 1, train acc: 0.64, test acc: 0.64
+2019-01-19 18:40:52,035:    |Epoch: 2, train acc: 0.72, test acc: 0.75
+2019-01-19 18:41:23,828:    |Epoch: 3, train acc: 0.77, test acc: 0.76
+2019-01-19 18:41:55,210:    |Epoch: 4, train acc: 0.80, test acc: 0.79

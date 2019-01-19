@@ -1,0 +1,6 @@
+2019-01-19 18:33:17,524:    |Namespace(batch_size=128, lr=0.1, mm=0.9, model_name='mine_1111_dropout', num_epoch=200, optim='sgd', resume=None, wd=0.0001)
+2019-01-19 18:33:17,621:    |cuda
+2019-01-19 18:33:19,182:    |==> Building model..
+2019-01-19 18:33:20,518:    |restart
+2019-01-19 18:33:49,447:    |Epoch: 0, train acc: 0.36, test acc: 0.48
+2019-01-19 18:34:15,311:    |Epoch: 1, train acc: 0.52, test acc: 0.55

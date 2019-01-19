@@ -23,7 +23,7 @@ import datetime
 
 def main():
     parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Training')
-    parser.add_argument('--model_name', default='mine_dropout', type=str,
+    parser.add_argument('--model_name', default='vgg16', type=str,
                         help='the string startswith means which model to use,  it is also log_name and save_name')
     parser.add_argument('--lr', default=1e-1, type=float)
     parser.add_argument('--wd', default=1e-4, type=float)

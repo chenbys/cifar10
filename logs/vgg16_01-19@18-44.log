@@ -1,0 +1,13 @@
+2019-01-19 18:44:53,387:    |Namespace(batch_size=128, lr=0.1, mm=0.9, model_name='vgg16', num_epoch=200, optim='sgd', resume=None, wd=0.0001)
+2019-01-19 18:44:53,479:    |cuda
+2019-01-19 18:44:55,022:    |==> Building model..
+2019-01-19 18:44:56,423:    |restart
+2019-01-19 18:45:27,024:    |Epoch: 0, train acc: 0.10, test acc: 0.10
+2019-01-19 18:45:54,287:    |Epoch: 1, train acc: 0.26, test acc: 0.37
+2019-01-19 18:46:21,560:    |Epoch: 2, train acc: 0.43, test acc: 0.48
+2019-01-19 18:46:48,635:    |Epoch: 3, train acc: 0.57, test acc: 0.57
+2019-01-19 18:47:15,526:    |Epoch: 4, train acc: 0.66, test acc: 0.69
+2019-01-19 18:47:42,695:    |Epoch: 5, train acc: 0.72, test acc: 0.72
+2019-01-19 18:48:09,605:    |Epoch: 6, train acc: 0.76, test acc: 0.73
+2019-01-19 18:48:36,621:    |Epoch: 7, train acc: 0.78, test acc: 0.67
+2019-01-19 18:49:03,652:    |Epoch: 8, train acc: 0.80, test acc: 0.73

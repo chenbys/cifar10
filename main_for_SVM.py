@@ -15,7 +15,7 @@ def main():
     gray_test = [cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) for img in testset.test_data]
 
     svm = svms.SVM(np.array(gray_train) / 255., np.array(trainset.train_labels),
-                   np.array(gray_test) / 255., np.array(testset.test_labels), pca_dim=32 * 10,
+                   np.array(gray_test) / 255., np.array(testset.test_labels), pca_dim=32 * 32,
                    name='SVM-gray-255')
     train_acc = svm.ctrain()
     test_acc = svm.ctest()
